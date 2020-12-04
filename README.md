@@ -9,8 +9,8 @@ This study intrigued me and has resulted in this project, where the correlation 
 
 
 **Goals**<br>
-Examine correlation between different attributes.
-Using economic, personal, and course prep data, predict student total score (combination of math, reading, and writing).
+- Examine correlation between different attributes.
+- Using economic, personal, and course prep data, predict student performance on a test including math, reading, and writing.
 
 
 **Acknowledgements**<br>
