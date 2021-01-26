@@ -1,4 +1,45 @@
-# Student Scores
+# Analysis of Student Exam Preparation Course and Student Score Predictor
+
+<i>Exams are extremely common for students and even for adults. On average, students in the US public school system take around 112 mandatory standard tests between pre-K and high school graduation according to a new [Council of the Great City Schools study](https://www.cgcs.org/cms/lib/DC00001581/Centricity/Domain/4/Testing%20Report.pdf) (2015). This is in addition to teacher-written tests within the class.</i>
+  
+  <i>With exams being part of every day school life, determining who passes and who fails, which school a student will get into, and even the confidence level of a student, it's important to understand how best to improve a student's grasp on a topic as well as how to demonstrate that understanding. Oftentimes, this is through additional support. In this project, I will analyze the affects of a student exam preparation course, students' background and demographics to better understand what influences student exam scores. Using this information, I will create a classification model to predict when students will pass or fail an exam that is heavily influenced by the exam prep course so that students in need of additional support are made aware of the optional prep course, as well as it's positive influence on exam scores.</i>
+
+## 1. Data
+This project's dataset was obtained from [Royce Kimmons randomly generated Student Performance Dataset](http://roycekimmons.com/tools/generated_data/exams), originally found on [Kaggle](https://www.kaggle.com/spscientist/students-performance-in-exams). It is purely fictional and is used to demonstrate how a school or online program could analyze an exam preparation course and to offer additional support to students who are predicted to perform below passing.
+
+The Kaggle dataset provided the first 1,000 rows of data, while Royce Kimmons' random generator provided the remaining 9,000 rows.
+
+<i>Please note that due to each child and his/her life being very different from his/her peer's, scores predicted should never be used in place of giving the student a chance to perform their best on the exam. Instead, these predictions should be used to offer additional support should they be interested.</i>
+
+## 2. Method
+Two major prediction problems in supervised machine learning are classification and regression.
+- **Classification:** The process of discovering an algorithm that divides the dataset into classes (discrete) based on each instances' features. In the realm of this particular project, this would be like determining whether a student will pass or fail an exam.
+- **Regression:** The process of discovering the correlations between the independent and dependent variables in order to predict the output value (continuous). In this project, it would be like predicting a student's percentage score on an exam.
+
+I chose to work with a classification problem to determine students who might score below passing on an exam. This would provide educators with a list of students who are at risk of failing an exam and who could use the additional support. As is the nature of teaching, teachers would be able to double check this list and add to it based on their experience while teaching the students.
+
+## 3. Data Cleaning
+[Data Cleaning Report](https://github.com/taflor/Student-Scores/blob/main/notebooks/1.1%20Data%20Wrangling.ipynb)
+
+In a classification problem, the key features to used as input variables consisted of economic, personal, and course prep data. These features were originally categorical in nature with no missing values, allowing for a smooth transition to one-hot encoded columns. As input variable consisted purely of 0's and 1's, there was no need to standardize the features.
+
+One important feature noting whether the parents participated in higher education was added. This new feature utilzied the parental education information into further breakdown and classify education in a way that only a human (rather than machine) would know is important.
+
+## 4. EDA
+[EDA Report](https://github.com/taflor/Student-Scores/blob/main/notebooks/1.2%20Exploratory%20Data%20Analysis.ipynb)
+
+
+## 5. Algorithms & Machine Learning
+
+## 6. Predictions
+
+## 7. Future Improvements
+
+## 8. Credits
+Thanks to Royce Kimmons for the experimental dataset and to Ram Hariharan for being an amazing Springboard mentor.
+
+## Personal Reasoning Behind This Project
+
 As a former educator, it was always interesting to see the differences in dedication to education at such a young age (6th grade -- 11 to 12 years old). Some students were eager to excel and would seek me out for help, while others would sit back and coast through class. It is up to the teachers to notice these trends, offer extra help, adjust the curriculum, and engage their students. When all of these approaches fail, one wonders why a student falls behind.
 
 Having done some research, I came across <i>The Atlantic's</i> article, ['The 32-Million Word Gap'](https://www.theatlantic.com/technology/archive/2010/03/the-32-million-word-gap/36856/). A study was done by psychologists Betty Hart and Todd Risley in the mid-1980's to determine why some students excel while others do not, even after taking part in Head Start, their program for children of America's low-income workers. They collected data on words spoken by students from "three different socioeconomic levels: (1) welfare homes, (2) working-class homes, and (3) professionals' homes".
@@ -11,7 +52,3 @@ This study intrigued me and has resulted in this project, where the correlation 
 **Goals**<br>
 - Examine correlation between different attributes.
 - Using economic, personal, and course prep data, predict student performance on a test including math, reading, and writing.
-
-
-**Acknowledgements**<br>
-Data on [Kaggle](https://www.kaggle.com/spscientist/students-performance-in-exams) from [Royce Kimmons](http://roycekimmons.com/tools/generated_data/exams).
