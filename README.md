@@ -62,12 +62,20 @@ Key:
 - 1 represents 'Completed Exam Prep Course'
 
 ## 6. Predictions
+[Predictions Report](https://github.com/taflor/Student-Scores/blob/main/notebooks/1.5%20Predictions.ipynb)
 
+Analysis of the model's predictions:
+- 73.5% of students who failed the exam were correctly identified.
+- **92.7% of students identified as failing did indeed fail the exam or scored within 10 points of failing. This flagging of students therefore would provide them with the extra opportunity to improve their grade.**
+- **80.8% of students who failed and have not taken the prep course were correctly flagged to suggest the exam prep course to. This provides a great base of students to suggest the exam prep course to.**
+- 11.7% of students who failed the exam have taken the exam prep course AND were missed by the model's prediction.
+- **14.7% of students who failed the exam have not taken the prep course AND were missed by the model's prediction. This is a cause for concern as these students failed the exam, did not take the exam prep course, and were missed by the prediction model. In future improvements, we would aim to decrease this percentage.**
 
 ## 7. Future Improvements
 If this project were to be implemented at a school or for an online program, I would suggest the following improvements:
 - Collect information on student's current test grades in each class, after school activities (e.g. sports, music, job), if they plan to go to college, and how many hours they study for each week on average (provide a range): This will provide more insight into the student and his/her life to possibly increase exam score prediction accuracy.
 - Using these extra features, predict percentage scores: This will allow us to identify which students are nearing the 'fail' threshold.
+- Aim to decrease the percentage of students who failed the exam, did not take the prep course, and were missed by the prediction model.
 
 ## 8. Credits
 Thanks to Royce Kimmons for the experimental dataset and to Ram Hariharan for being an amazing Springboard mentor.
