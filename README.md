@@ -23,17 +23,21 @@ I chose to work with a classification problem to determine students who might sc
 
 In a classification problem, the key features to used as input variables consisted of economic, personal, and course prep data. These features were originally categorical in nature with no missing values, allowing for a smooth transition to one-hot encoded columns. As input variable consisted purely of 0's and 1's, there was no need to standardize the features.
 
-One important feature noting whether the parents participated in higher education was added. This new feature utilzied the parental education information into further breakdown and classify education in a way that only a human (rather than machine) would know is important.
+One important feature noting whether the parents participated in higher education was added. This new feature utilzied the parental education information to further breakdown and classify education in a way that only a human (rather than machine) would know is an important distinction (high school education vs higher level education).
 
 ## 4. EDA
 [EDA Report](https://github.com/taflor/Student-Scores/blob/main/notebooks/1.2%20Exploratory%20Data%20Analysis.ipynb)
 
 
 ## 5. Algorithms & Machine Learning
+[Model Report](https://github.com/taflor/Student-Scores/blob/main/notebooks/1.4%20Modeling_Writing_Scoring_Table.ipynb)
 
 ## 6. Predictions
 
 ## 7. Future Improvements
+If this project were to be implemented at a school or for an online program, I would suggest the following improvements:
+- Collect information on student's current test grades in each class, after school activities (e.g. sports, music, job), if they plan to go to college, and how many hours they study for each week on average (provide a range): This will provide more insight into the student and his/her life to possibly increase exam score prediction accuracy.
+- Using these extra features, predict percentage scores: This will allow us to identify which students are nearing the 'fail' threshold.
 
 ## 8. Credits
 Thanks to Royce Kimmons for the experimental dataset and to Ram Hariharan for being an amazing Springboard mentor.
