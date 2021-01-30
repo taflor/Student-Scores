@@ -1,0 +1,14 @@
+LinearSVC()
+
+{'C': 1.0,
+ 'class_weight': None,
+ 'dual': False,
+ 'fit_intercept': True,
+ 'intercept_scaling': 1,
+ 'loss': 'squared_hinge',
+ 'max_iter': 10000,
+ 'multi_class': 'ovr',
+ 'penalty': 'l2',
+ 'random_state': None,
+ 'tol': 1,
+ 'verbose': 0}
