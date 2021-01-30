@@ -54,10 +54,14 @@ Examining Recall of a handful of machine learning models, we see that in this pa
 Using these models, we performed hyperparameter tuning to discover the best model for predicting students who will fail the exam. The model with the best recall score is the Linear Support Vector Classifier as can be seen in the confusion matrix and classification report below.
 
 ![Confusion Matrix](https://github.com/taflor/Student-Scores/blob/main/figures/MODEL_hyptertuned_linearsvc.png)
-![Classification Report](https://github.com/taflor/Student-Scores/blob/main/figures/MODEL_classification_report_tunedSVC.png)
 
+![Classification Report](https://github.com/taflor/Student-Scores/blob/main/figures/MODEL_classification_report_tunedSVC.png)
+Key:
+- 0 represents 'No Exam Prep'
+- 1 represents 'Completed Exam Prep Course'
 
 ## 6. Predictions
+
 
 ## 7. Future Improvements
 If this project were to be implemented at a school or for an online program, I would suggest the following improvements:
