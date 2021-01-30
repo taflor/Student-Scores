@@ -28,9 +28,34 @@ One important feature noting whether the parents participated in higher educatio
 ## 4. EDA
 [EDA Report](https://github.com/taflor/Student-Scores/blob/main/notebooks/1.2%20Exploratory%20Data%20Analysis.ipynb)
 
+A significance test was run on each set of exam scores. Overall, it was found that the students who completed the exam preparation course scored higher on all tests, as well as the average, than students who did not complete the course. It was also found that the greatest difference between scores of students who took teh exam prep course and those who did not existed between the scores on the writing exam. Therefore, moving forward, the writing score is used as the predicted variable to ensure students who could benefit the most from the exam prep course are identified.
+
+The boxplots below compare the scores students who did not take the exam prep course and the scores of students who did. As can be seen, the greatest impact of the exam prep course is on the writing exam.
+
+![Boxplot of Exam Scores with Exam Prep Course](https://github.com/taflor/Student-Scores/blob/main/figures/EDA_exam_scores_boxplots.png)
+
+After running a one-sided test for the null hypothesis that the writing mean scores are equal for students who complete the exam prep course and those who do not, a p-value of 5.8e-224 allowed us to reject the null hypothesis and accept the alternative. The alternative states that the writing mean score of students who complete the exam prep course is greater than the mean score of students who do not complete the exam.
+
+![Distribution Writing Scores](https://github.com/taflor/Student-Scores/blob/main/figures/EDA_distribution_writing_scores.png)
 
 ## 5. Algorithms & Machine Learning
 [Model Report](https://github.com/taflor/Student-Scores/blob/main/notebooks/1.4%20Modeling_Writing_Scoring_Table.ipynb)
+
+Our original problem: Identify students who might fail the exam to provide optional additional support via an exam preparation course.
+
+According to our problem, we are most interested in detecting students who are at risk of failing the exam. This means the recall -- calculation for how many actual "fails" our model captures by labeling it "fail" -- is the metric we are most interested in.
+
+![Baseline Comparison of Models](https://github.com/taflor/Student-Scores/blob/main/figures/MODEL_baseline_comparison.png)
+
+Examining Recall of a handful of machine learning models, we see that in this particular training set and cross validation split up the following models produced the best results:
+- Linear Support Vector Classifier
+- Logistic Regression
+
+Using these models, we performed hyperparameter tuning to discover the best model for predicting students who will fail the exam. The model with the best recall score is the Linear Support Vector Classifier as can be seen in the confusion matrix and classification report below.
+
+![Confusion Matrix](https://github.com/taflor/Student-Scores/blob/main/figures/MODEL_hyptertuned_linearsvc.png)
+![Classification Report](https://github.com/taflor/Student-Scores/blob/main/figures/MODEL_classification_report_tunedSVC.png)
+
 
 ## 6. Predictions
 
