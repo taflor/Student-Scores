@@ -55,11 +55,11 @@ Using these models, we performed hyperparameter tuning to discover the best mode
 
 ![Confusion Matrix](https://github.com/taflor/Student-Scores/blob/main/figures/MODEL_hyptertuned_linearsvc.png)
 
+![Classification Report](https://github.com/taflor/Student-Scores/blob/main/figures/MODEL_classification_report_tunedSVC.png)
+
 Key:
 - 0 represents 'No Exam Prep'
 - 1 represents 'Completed Exam Prep Course'
-
-![Classification Report](https://github.com/taflor/Student-Scores/blob/main/figures/MODEL_classification_report_tunedSVC.png)
 
 ## 6. Predictions
 
@@ -81,8 +81,3 @@ Having done some research, I came across <i>The Atlantic's</i> article, ['The 32
 They found that "Children in professionals' homes were exposed to an average of more than fifteen hundred more spoken words per hour than children in welfare homes. Over one year, that amounted to a difference of nearly 8 million words, which, by age four, amounted to a total gap of 32 million words. They also found a substantial gap in tone and in the complexity of words being used. As they crunched the numbers, they discovered a direct correlation between the intensity of these early verbal experiences and later achievement. "We were astonished at the differences the data revealed," Hart and Risley wrote in their book Meaningful Differences. "The most impressive aspects [are] how different individual families and children are and how much and how important is children's cumulative experience before age 3.""
 
 This study intrigued me and has resulted in this project, where the correlation between attributes within the file will be examined and economic, gender, and course prep data will be used to predict student performance on a test including math, reading, and writing sections.
-
-
-**Goals**<br>
-- Examine correlation between different attributes.
-- Using economic, personal, and course prep data, predict student performance on a test including math, reading, and writing.
