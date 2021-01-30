@@ -55,10 +55,11 @@ Using these models, we performed hyperparameter tuning to discover the best mode
 
 ![Confusion Matrix](https://github.com/taflor/Student-Scores/blob/main/figures/MODEL_hyptertuned_linearsvc.png)
 
-![Classification Report](https://github.com/taflor/Student-Scores/blob/main/figures/MODEL_classification_report_tunedSVC.png)
 Key:
 - 0 represents 'No Exam Prep'
 - 1 represents 'Completed Exam Prep Course'
+
+![Classification Report](https://github.com/taflor/Student-Scores/blob/main/figures/MODEL_classification_report_tunedSVC.png)
 
 ## 6. Predictions
 
